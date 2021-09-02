@@ -1,0 +1,39 @@
+.dropdown {
+position: relative;
+z-index: 2;
+    &__list {
+        list-style: none;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        left: -3.6%;
+        box-sizing: border-box;
+        padding: 0;
+        width: 76vw;
+        height: 81vh;
+        position: absolute;
+        transform-origin: 0% 0%;
+        transform: translate(0, -154%);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+        flex-direction: column;
+        align-items: center;
+    }
+    &__checkbox {
+        position: absolute;
+        margin: 0;
+        left: 49.4%;
+        z-index: 2;
+        height: 24px;
+        width: 31px;
+        opacity: 0;
+
+        &:checked ~ ul , .dropdown{
+            transform: none;
+        }
+    }
+
+    &__item {
+
+    }
+
+}
