@@ -1,27 +1,32 @@
 .dropdown {
-position: relative;
 
     &__list {
-        list-style: none;
-        margin: 0;
-        display: flex;
-        justify-content: space-evenly;
-        left: -50vw;
-        box-sizing: border-box;
         padding: 0;
-        width: 100vw;
-        height: 100vh;
-        position: absolute;
+        margin: 0;
+        list-style: none;
+
         transform-origin: 0% 0%;
         transform: translate(0, -154%);
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-        flex-direction: column;
-        align-items: center;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
         background-color: #f0eceb;
-        z-index: 2;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     &__item {
+        &:first-child {
+            width: 2vw;
+            height: 2vh;
+        }
     }
     &__link {
         text-decoration: none;
@@ -34,15 +39,9 @@ position: relative;
     }
 
     &__checkbox {
-        position: absolute;
-        margin: 0;
-        left: 2.4%;
-        height: 24px;
-        width: 31px;
-        opacity: 0;
-        z-index: 3;
+        display: none;
 
-        &:checked ~ ul , .dropdown{
+        &:checked ~ ul{
             transform: none;
         }
     }
