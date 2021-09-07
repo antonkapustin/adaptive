@@ -3,6 +3,12 @@
     left: 30.3%;
     top: 35%;
 
+    &_portfolio {
+        position: relative;
+        height: 180vh;
+        overflow: hidden;
+    }
+
     &__title {
         text-transform: uppercase;
         font-size: 1.9vw;
@@ -17,11 +23,45 @@
             top: -11%;
             left: 16.4%;
         }
+        &_contact {
+            font-size: 2.8em;
+            position: absolute;
+            top: 6%;
+            left: 16.4%;
+        }
+        &_portfolio {
+            position: absolute;
+            top: 8.3%;
+            left: 19%;
+            font-size: 2.6vw;
+        }
     }
     &__content {
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        &_portfolio {
+            display: flex;
+            position: absolute;
+
+            &:nth-child(2n) {
+                left: 69%;
+                top: 11%;
+            }
+            &:nth-child(3n) {
+                left: 14%;
+                top: 26%;
+            }
+            &:nth-child(4n) {
+                left: 48%;
+                top: 48%;
+            }
+            &:nth-child(5n) {
+                left: 0;
+                top: 79%;
+            }
+        } 
     }
     &_about {
         display: flex;
@@ -31,8 +71,27 @@
     &__paragraph {
         width:42ch;
         color: gray;
+
+        &_contact {
+            width: 26ch;
+            font-size: 1.5vw;
+        }
+        &_portfolio {
+            width: unset;
+            margin: 0 26px;
+        }
+        &_bold {
+            font-weight: 600;
+            font-size: 1.5vw;
+        }
     }
     &__img {
         width: 300px;
+
+        &_large {
+            width: 447px;
+            height: 300px;
+
+        }
     }
 }

@@ -9,14 +9,24 @@
         border-radius: 0;
         background: none;
         padding: 3%;
+
+        &_about {
+            background: white;
+        }
     }
     .link {
         display: none;
     }
     .header {
         align-items: center;
+        color: white;
+
+        &_about {
+            color: black;
+            margin-bottom: 3vh;
+        }
         &__logo {
-            color: white;
+            color: inherit;
             font-size: 1.5em
         }
         &__menu {
@@ -24,6 +34,10 @@
         }
         &__devider {
             background-color: white;
+
+            &_about {
+                background-color:black ;
+            }
 
             &:last-child {
                 margin: 0;
@@ -41,9 +55,34 @@
     .main {
         left: 15.3%;
         top: 33%;
+        color:white;
+
+        &_about {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            flex-grow: 1;
+            flex-direction: column;
+            align-items: center;
+            color: black;
+
+        }
         &__title {
             font-size: 7vw;
-            color: white;
+            color: inherit;
+
+            &_about {
+            position: unset;
+            }
+        }
+        &__paragraph {
+            font-size: 3vw;
+            width: 58ch;
+            color: inherit;
+        }
+        &__img {
+            width: 110%;
+            height: 100%;
         }
     }
 }
