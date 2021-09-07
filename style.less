@@ -13,6 +13,12 @@ body {
     box-sizing: border-box;
 
 }
+.content:not(:target){
+    display:none;
+}
+content:target {
+    display: flex;
+}
 
 @import url(less/content.less);
 @import url(less/header.less);
