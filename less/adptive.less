@@ -13,6 +13,9 @@
         &_about {
             background: white;
         }
+        &_portfolio {
+            background-color: #f0eceb;
+        }
     }
     .link {
         display: none;
@@ -24,6 +27,9 @@
         &_about {
             color: black;
             margin-bottom: 3vh;
+        }
+        &_portfolio {
+            color: black;
         }
         &__logo {
             color: inherit;
@@ -67,6 +73,37 @@
             color: black;
 
         }
+        &_portfolio {
+            overflow: unset;
+        }
+        &__img {
+            display: none;
+        }
+        &__content_portfolio {
+            position: unset;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center center;
+            height: 30%;
+            margin: 27px 0;
+            width: 101%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+
+            &:nth-child(2n) {
+               background-image: url(assets/13.jpeg);
+            }
+            &:nth-child(3n) {
+                background-image: url(assets/32.jpeg);
+            }
+            &:nth-child(4n) {
+                background-image: url(assets/2-4.jpeg);
+            }
+            &:nth-child(5n) {
+                background-image: url(assets/23-3.jpeg);
+            }
+        }
         &__title {
             font-size: 7vw;
             color: inherit;
@@ -74,11 +111,24 @@
             &_about {
             position: unset;
             }
+            &_portfolio {
+                position: unset;
+            }
         }
         &__paragraph {
             font-size: 3vw;
             width: 58ch;
             color: inherit;
+
+            &_bold {
+                font-size: 6vw;
+            }
+
+            &_portfolio {
+                color: white;
+                margin-bottom: 3vh;
+                font-size: 4vw;
+            }
         }
         &__img {
             width: 110%;
