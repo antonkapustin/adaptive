@@ -1,87 +1,28 @@
 .main {
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
 
-    &_home {
-    background-image: url(assets/2-4.jpeg);
-    background-position: 67.6% 69%;
-    background-repeat: no-repeat;
-    background-size: 37.5% 43%;
-    }
-    &_portfolio {
-        position: relative;
-        height: 180vh;
-        overflow: hidden;
-    }
-
-    &__title {
-        text-transform: uppercase;
-        font-size: 1.9vw;
-        width: 22ch;
-        line-height: 5vh;
-        letter-spacing: 1.8px;
-        margin: 0;
-
-        &_about{
-            font-size: 2.8em;
-            position: absolute;
-            top: -11%;
-            left: 16.4%;
-        }
-        &_portfolio {
-            position: absolute;
-            top: 8.3%;
-            left: 19%;
-            font-size: 2.6vw;
-        }
-    }
     &__content {
         display: flex;
         flex-direction: column;
         justify-content: center;
-
-        &_portfolio {
-            display: flex;
-            position: absolute;
-
-            &:nth-child(2n) {
-                left: 69%;
-                top: 11%;
-            }
-            &:nth-child(3n) {
-                left: 14%;
-                top: 26%;
-            }
-            &:nth-child(4n) {
-                left: 48%;
-                top: 48%;
-            }
-            &:nth-child(5n) {
-                left: 0;
-                top: 79%;
-            }
-        } 
     }
-    &_about {
-        display: flex;
-        justify-content: center;
-        position: relative;
-    }
+  
     &__paragraph {
-        width:42ch;
+        max-width:42ch;
         color: gray;
 
         &_contact {
             width: 26ch;
             font-size: 1.5vw;
         }
-        &_portfolio {
-            width: unset;
-            margin: 0 26px;
-        }
         &_bold {
             font-weight: 600;
             font-size: 1.5vw;
         }
     }
+
     &__img {
         width: 300px;
 

@@ -15,7 +15,7 @@
         right: 0;
         bottom: 0;
         background-color: #f0eceb;
-        z-index: 1;
+        z-index: -1;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -50,6 +50,7 @@
         &:checked ~ ul{
             transition: 1s;
             opacity: 1;
+            z-index: 1;
         }
     }
 
