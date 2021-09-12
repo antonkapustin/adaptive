@@ -7,20 +7,38 @@ body {
     background-image: url(assets/11.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
     margin: 0;
     padding: 94px 203px;
     box-sizing: border-box;
     overflow-y: scroll;
 
-}
-.main:not(:target){
-    display:none;
-}
-.main:target {
-    display: flex;
+    @media @max1024 {
+        padding: unset;
+    }
+
 }
 
+@max1024: (max-width: 1024px);
+
+
+
+@media @max1024 {
+    .is_hidden_mobile {
+        display: none;
+    }
+    #first {
+        background-image: url(assets/13.jpeg)
+    }
+    #second {
+        background-image: url(assets/32.jpeg)
+    }
+    #third {
+        background-image: url(assets/2-4.jpeg)
+    }
+    #forth {
+        background-image: url(assets/23-3.jpeg)
+    }
+}
 @import url(less/content.less);
 @import url(less/header.less);
 @import url(less/dropdown.less);

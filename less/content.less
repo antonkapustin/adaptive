@@ -7,16 +7,9 @@
     height: 100%;
     background-color: #f0eceb;
     border-radius: 22px;
-    overflow: hidden;
     box-sizing: border-box;
-
-    &_about{
-        background-image: none;
-    }
-    &_portfolio {
-        background-image: none;
-        height: unset;
-        padding: 23px 0;
-        overflow: unset;
+    @media @max1024 {
+        border-radius: unset;
+        padding: 0;
     }
 }

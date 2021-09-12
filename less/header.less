@@ -3,11 +3,19 @@
     justify-content: space-between;
     position: relative;
 
+    @media @max1024 {
+        padding: 23px 39px;
+    }
+
     &__menu {
         position: absolute;
         left: 50%;
         top: 50%;
         margin: -5px 0 0 -11px;
+
+        @media @max1024 {
+            position: unset;
+        }
 
     }
     &__toggler {
