@@ -1,0 +1,49 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    @media @max1024 {
+        padding: 23px 39px;
+    }
+
+    &__menu {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -5px 0 0 -11px;
+
+        @media @max1024 {
+            position: unset;
+        }
+
+    }
+    &__toggler {
+        display: block;
+        cursor: pointer;
+    }
+    &__devider {
+        display: block;
+        width: 31px;
+        height: 2px;
+        margin-bottom: 6px;
+        background: grey;
+
+        &:last-child {
+            margin: 0 0 0 5px;
+
+            @media @max1024 {
+                margin: 0;
+            }
+        }
+    }
+    &__logo {
+        text-transform: uppercase;
+        font-size: 0.9em;
+        text-decoration: none;
+        color: grey;
+    }
+    &_portfolio {
+        padding: 0 39px;
+    }
+}
