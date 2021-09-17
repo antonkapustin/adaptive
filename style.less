@@ -40,25 +40,20 @@ body {
         background-image: url(assets/23-3.jpeg)
     }
 }
-
-#first, #third {
-    justify-content: flex-end;
-}
-#first {
-    margin-right: -40px;
-}
-#second, #third, #forth {
-    margin-top: -120px;
-}
-#forth {
-    margin-left:-40px;
-}
-
-@media @max1024 {
-    #first, #second, #third, #forth {
-        margin: 0;
+@media @min1024 {
+    #first, #third {
+        justify-content: flex-end;
     }
-}
+    #first {
+        margin-right: -40px;
+    }
+    #second, #third, #forth {
+        margin-top: -120px;
+    }
+    #forth {
+        margin-left:-40px;
+    }
+}    
 
 @import url(less/content.less);
 @import url(less/header.less);

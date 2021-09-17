@@ -1,11 +1,10 @@
 .paragraph {
-    max-width:42ch;
     color: gray;
     font-size: 1.5em;
     margin: 0;
 
-    @media @max1024 {
-        max-width: unset;
+    @media @min1024 {
+        max-width:42ch;
     }
 
     &_bold {

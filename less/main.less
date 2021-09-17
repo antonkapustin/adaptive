@@ -1,10 +1,6 @@
 .main {
-    justify-content: center;
     flex-wrap: wrap;
-
-    @media @max1024 {
-        height: 100%;
-    }
+    justify-content: center;
 
     &_vcenter_desktop {
         margin: auto 0;
@@ -19,11 +15,8 @@
     }
 
     &_column {
-        flex-direction: column;
-       
-
-        @media @max1024 {
-            flex-direction: unset;
+        @media @min1024 {
+            flex-direction: column;
         }
     }
 
@@ -37,18 +30,13 @@
             justify-content: unset;
 
             @media @max1024 {
-                flex-direction: column;
                 width: 100%;
                 height: 500px;
                 background-position: center center;
                 background-size: cover;
-                justify-content: flex-end;
+                align-items: flex-end;
             }
             
-        }
-
-        &_large {
-            justify-content: space-between;
         }
     }
   
